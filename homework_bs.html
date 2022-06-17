@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.css" />
+    <style>
+      .bgPic {
+        height: 100vh;
+        background: url('./images/1_20190619_16b6ecdf6e3676930.jpeg') no-repeat
+          center center/cover;
+      }
+
+      @media (min-width: 768px) {
+        .bgPic {
+          width: 3000px;
+          max-height: 1200px;
+        }
+      }
+      .grayscale {
+        backdrop-filter: grayscale(100%);
+      }
+      .brightness {
+        backdrop-filter: brightness(1.5);
+      }
+      .blur {
+        backdrop-filter: blur(5px);
+      }
+      .contrast {
+        backdrop-filter: contrast(0.8);
+      }
+      .invert {
+        backdrop-filter: invert(0.7);
+      }
+      .opacity {
+        backdrop-filter: opacity(0.4);
+      }
+      .sepia {
+        backdrop-filter: sepia(0.4);
+      }
+      .saturate {
+        backdrop-filter: saturate(1.8);
+      }
+      .hue {
+        backdrop-filter: hue-rotate(120deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bgPic">
+      <div class="container-fluid w-100 h-lg-100">
+        <div class="row d-flex w-100 h-100 align-items-center">
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 shadow"
+          >
+            <p class="d-flex align-items-center">SCROLL</p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 shadow"
+          >
+            <p class="d-flex align-items-center">backdrop-filter: none</p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 grayscale shadow"
+          >
+            <p class="d-flex align-items-center">
+              backdrop-filter:grayscale(1)
+            </p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 brightness shadow"
+          >
+            <p class="d-flex align-items-center">
+              backdrop-filter:brightness(1.5)
+            </p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 blur shadow"
+          >
+            <p class="d-flex align-items-center">backdrop-filter: blur(5px)</p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 contrast shadow"
+          >
+            <p class="d-flex align-items-center">
+              backdrop-filter:contrast(0.8)
+            </p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 invert shadow"
+          >
+            <p class="d-flex align-items-center">backdrop-filter:invert(0.7)</p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center h4 d-flex justify-content-center col-12 col-lg-1 rounded-2 opacity shadow"
+          >
+            <p class="d-flex align-items-center">
+              backdrop-filter:opacity(0.4)
+            </p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center d-flex justify-content-center col-12 col-lg-1 rounded-2 sepia shadow"
+          >
+            <p class="d-flex align-items-center">backdrop-filter: sepia(0.4)</p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center d-flex justify-content-center col-12 col-lg-1 rounded-2 saturate shadow"
+          >
+            <p class="d-flex align-items-center">
+              backdrop-filter:saturate(1.8)
+            </p>
+          </div>
+          <div
+            class="col me-lg-3 h-lg-50 border border-1 flex-shrink-0 text-center d-flex justify-content-center col-12 col-lg-1 rounded-2 hue shadow"
+          >
+            <p class="d-flex align-items-center">
+              backdrop-filter:hue-rotate(120deg)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
